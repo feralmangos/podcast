@@ -34,6 +34,7 @@ nav li a {
 nav li a:hover {
     background: tomato;
     color: white;
+    text-decoration: line-through;
 }
 
 .navigation {
@@ -50,9 +51,28 @@ header {
 }
 
 h1 {
-    font-size: 36px
+    font-size: 36px;
 }
 
 header h1 span {
     text-decoration: line-through;
+}
+
+header h2 {
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.bg-blue {
+    padding: 10px;
+    height: 600px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    transform: skew( 0deg, -10deg);
+}
+
+.bigdiv {
+    display: block;
+    width: 100%;
 }
