@@ -1,18 +1,19 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav {
     width: 100%;
-    font-family: Verdana, Geneva, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     background: #0000EC;
     height: auto;
 }
@@ -31,6 +32,14 @@ nav li a {
     text-transform: uppercase;
 }
 
+.link-roof {
+    padding-top: 16px;
+}
+
+.link-floor {
+    padding-bottom: 16px;
+}
+
 nav li a:hover {
     background: tomato;
     color: white;
@@ -46,12 +55,15 @@ nav li a:hover {
 }
 
 header {
+    margin-top: 30px;
     font-family: 'IBM Plex Mono', monospace;
     padding: .5em 1em;
 }
 
 h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 36px;
+    margin: 16px;
 }
 
 header h1 span {
@@ -59,20 +71,52 @@ header h1 span {
 }
 
 header h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
     color: #060A24;
     letter-spacing: 0;
     line-height: 22px;
     font-size: 14px;
+    margin: 16px;
 }
 
 .bg-blue {
-    padding: 10px;
     height: 600px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    transform: skew( 0deg, -10deg);
+    transform: skew( 0deg, -6deg);
 }
 
 .bigdiv {
     display: block;
     width: 100%;
+    padding-top: 40px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.btn a:link {
+    text-decoration: none;
+}
+
+.btn button:hover {
+    background: tomato;
+    color: white;
+    text-decoration: line-through;
+}
+
+.btn button {
+    margin: 16px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    background: #00F3BB;
+    width: 100%;
+    border: none;
+    height: 48px;
 }
